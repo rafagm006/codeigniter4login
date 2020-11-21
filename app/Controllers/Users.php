@@ -10,7 +10,6 @@ class Users extends BaseController
 		$data = [];
 		helper(['form']);
 
-
 		if ($this->request->getMethod() == 'post') {
 			//let's do the validation here
 			$rules = [
@@ -38,7 +37,6 @@ class Users extends BaseController
 
 			}
 		}
-
 		echo view('templates/header', $data);
 		echo view('login');
 		echo view('templates/footer');
