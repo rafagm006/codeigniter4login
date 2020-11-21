@@ -28,18 +28,19 @@ class Users extends BaseController
 			}else{
 				$model = new UserModel();
 
-				$user = $model->where('email', $this->request->getVar('email'))
-											->first();
+				$user = $model->where('email', $this->request->getVar('email'))->first();
 
 				$this->setUserSession($user);
 				//$session->setFlashdata('success', 'Successful Registration');
 				return redirect()->to('dashboard');
 
 			}
-		}
-		echo view('templates/header', $data);
+		}elseif (session()->get('isLoggedIn')){
+            return redirect()->to('dashboard');
+        }
+		echo view('templates/login_header', $data);
 		echo view('login');
-		echo view('templates/footer');
+		echo view('templates/login_footer');
 	}
 
 	private function setUserSession($user){
