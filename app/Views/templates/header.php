@@ -10,7 +10,6 @@
   <body>
 
     <?php
-  /*
       $uri = service('uri');
      ?>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -47,6 +46,3 @@
       </div>
       </div>
     </nav>
-<?php
-*/
-?>
