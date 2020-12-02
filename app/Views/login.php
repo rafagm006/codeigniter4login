@@ -28,7 +28,7 @@
             <div class="col-12 col-sm-12">
                 <button class="btn btn-success btn-block m-0" type="submit"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</button>
             </div>
-            <div class="col-12 col-sm-6 hide">
+            <div class="col-12 col-sm-6" hidden>
                 <button class="btn btn-primary btn-block" type="button" onclick="location.href = '/register';"><i class="fas fa-user-plus"></i> Crear cuenta nueva.</button>
             </div>
         </div>
